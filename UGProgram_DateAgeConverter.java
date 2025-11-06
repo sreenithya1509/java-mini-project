@@ -15,7 +15,7 @@ public class UGProgram_DateAgeConverter {
         String dateFormatToken = args[2].trim();
         String dlcArg = args[3].trim();
 
-        if (dlcArg.length() != 1 || "-/.":indexOf(dlcArg.charAt(0)) < 0) {
+        if (dlcArg.length() != 1 || "-/.".indexOf(dlcArg.charAt(0)) < 0) {
             printUsageAndExit("Delimiter (4th arg) must be one character and one of '-', '/', '.'");
         }
         char dlc = dlcArg.charAt(0);
@@ -122,3 +122,5 @@ public class UGProgram_DateAgeConverter {
         System.exit(1);
     }
 }
+
+
